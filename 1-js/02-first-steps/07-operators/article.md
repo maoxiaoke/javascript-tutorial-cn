@@ -1,17 +1,18 @@
-# Operators
+# 操作符
 
-Many operators are known to us from school. It is an addition `+`, a multiplication `*`, a substraction `-` and so on.
+很多操作符自上学时期就耳熟能详。加 `+`、乘 `*`、减 `-` 等等。
 
-In this chapter we concentrate on aspects that are not covered by the school arithmetic.
+本章我们关注上学时期没有涉及到的有关算术的其他方面。
 
 [cut]
 
-## Terms: "unary", "binary", "operand"
+## 术语: “一元”, "二元", "操作数"
 
-Before we move on, let's grasp the common terminology.
+在开始学习之前，先掌握几个通用术语。
 
-- *An operand* -- is what operators are applied to. For instance in multiplication `5 * 2` there are two operands: the left operand is `5`, and the right operand is `2`. Sometimes people say "arguments" instead of "operands".
-- An operator is *unary* if it has a single operand. For example, the unary minus `"-"` reverses the sign of the number:
+- *操作数* -- 运算符作用的地方。例如乘法运算 `5 * 2` 包含两个操作数：左操作数是 `5`，右操作数是`2`。通常人们说 “参数” 而不是 “操作数”。
+
+- 如果操作符只有操作数，那么这个操作符就是 *unary* 操作符。比如，一元减号操作符 `"-"` 返回数字值得相反数。
 
     ```js run
     let x = 1;
@@ -19,7 +20,7 @@ Before we move on, let's grasp the common terminology.
     *!*
     x = -x;
     */!*
-    alert( x ); // -1, unary minus was applied
+    alert( x ); // -1, 应用了一元减号操作符
     ```
 - An operator is *binary* if it has two operands. The same minus exists in the binary form as well:
 
