@@ -1,8 +1,8 @@
 # 操作符
 
-很多操作符自上学时期就耳熟能详。加 `+`、乘 `*`、减 `-` 等等。
+很多操作符自学生时代就耳熟能详。加 `+`、乘 `*`、减 `-` 等等。
 
-本章我们关注上学时期没有涉及到的有关算术的其他方面。
+本章我们关注学生时代没有涉及到的有关算术的其他方面。
 
 [cut]
 
@@ -12,7 +12,7 @@
 
 - *操作数* -- 运算符作用的地方。例如乘法运算 `5 * 2` 包含两个操作数：左操作数是 `5`，右操作数是`2`。通常人们说 “参数” 而不是 “操作数”。
 
-- 如果操作符只有操作数，那么这个操作符就是 *unary* 操作符。比如，一元减号操作符 `"-"` 返回数字值得相反数。
+- 如果操作符只有一个操作数，那么这个操作符就是 *一元* 操作符。比如，一元减号操作符 `"-"` 返回数字值得相反数。
 
     ```js run
     let x = 1;
@@ -22,29 +22,29 @@
     */!*
     alert( x ); // -1, 应用了一元减号操作符
     ```
-- An operator is *binary* if it has two operands. The same minus exists in the binary form as well:
+- 如果操作符有两个操作数，那么这个操作符就是 *二元* 操作符。相同的减号操作符也存在二元操作数格式：
 
     ```js run no-beautify
     let x = 1, y = 3;
-    alert( y - x ); // 2, binary minus substracts values
+    alert( y - x ); // 2, 二元减号操作符用于两值相减
     ```
 
-    Formally, we're talking about the two different operators here: the unary minus (single operand, reverses the sign) and the binary minus (two operands, substracts).
+    正式地，我们在此处讨论的是两种不同的操作符：一元减号(单操作数，得到相反数)和二元减号(两个操作数，用于两值相减)。
 
-## Strings concatenation, binary +
+## 字符串连接，二元 + 号
 
-Now let's see special features of JavaScript operators that are beyond school arithmetics.
+现在来看看 JavaScript 操作符的特别的特性(这些特性超出了我们在学校所学的算术知识)。
 
-Usually the plus operator `'+'` sums numbers.
+通常，加号操作符 `'+'` 用于两值相加。
 
-But if the binary `+` is applied to strings, it merges (concatenates) them:
+但是，如果二元 `+` 操作符应用于字符串，合并(连接)它们。
 
 ```js
 let s = "my" + "string";
 alert(s); // mystring
 ```
 
-Note that if any of operands is a string, then the other one is converted to string too.
+注意的是，任意的一个操作数是字符串，另一个操作数也将转换为字符串。
 
 For example:
 
