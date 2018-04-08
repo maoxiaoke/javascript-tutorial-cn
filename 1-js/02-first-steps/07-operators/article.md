@@ -46,15 +46,16 @@ alert(s); // mystring
 
 注意的是，任意的一个操作数是字符串，另一个操作数也将转换为字符串。
 
-For example:
+比如：
 
 ```js run
 alert( '1' + 2 ); // "12"
 alert( 2 + '1' ); // "21"
 ```
 
-See, it doesn't matter whether the first operand is a string or the second one. The rule is simple: if any of operands is a string, then convert the other one into a string as well.
+看，无论第一个操作数还是第二个操作数是字符串，都是这样的结果。规则很简单：任意的一个操作数是字符串，同样将另一个操作数转换为字符串。
 
+字符串的级联和转换是二元操作符 `"+"` 的特性。
 The string concatenation and conversion is the special feature of the binary plus `"+"`. Other arithmetic operators work only with numbers. They always convert their operands to numbers.
 
 For instance, subtraction and division:
